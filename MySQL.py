@@ -8,9 +8,8 @@ import pymysql.cursors
 import datetime as dt
 
 #================================================================
-#****************************************************************
+# Create Database****************************************************
 
-# Create Database
 connection = pymysql.connect(host='localhost',
                              user='root',
                              port=3306,
@@ -22,9 +21,8 @@ try:
 finally:
     connection.close()  
 #================================================================
-#****************************************************************
+# Creating a Table************************************************
     
-# Creating a Table    
 connection = pymysql.connect(host='localhost',
                              user='root',
                              port=3306,
@@ -41,9 +39,8 @@ finally:
     connection.close() 
     
 #================================================================
-#****************************************************************
-    
-# Inserting Data into Table
+# Inserting Data into Table**************************************
+
 myDate = dt.datetime(2000,1,1)
 
 connection = pymysql.connect(host='localhost',
@@ -62,9 +59,8 @@ finally:
     connection.close()   
     
 #================================================================
-#****************************************************************
-    
-# Querying Data
+# Querying Data**************************************************
+
 myDate = dt.datetime(2000,1,1)
 
 connection = pymysql.connect(host='localhost',
